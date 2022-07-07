@@ -10,21 +10,36 @@
     <input type="text" id="num1">
     <button onclick="plus()">+</button>
     <button onclick="minus()">-</button>
+    <button onclick="multiply()">*</button>
+    <button onclick="divide()">/</button>
+    
     <input type="text" id="num2">
     =
     <span id="result"></span>
     <script>
        
         function plus(){
-            let a = Number(document.querySelector("#num1").value);
-            let b = Number(document.querySelector("#num2").value);
-            document.querySelector("#result").innerText = a + b;
+            let num1 = Number(document.querySelector("#num1").value);
+            let num2 = Number(document.querySelector("#num2").value);
+            document.querySelector("#result").innerText = num1 + num2;
         };
 
         function minus(){
-            let a = Number(document.querySelector("#num1").value);
-            let b = Number(document.querySelector("#num2").value);
-            document.querySelector("#result").innerText = a - b;
+            let num1 = Number(document.querySelector("#num1").value);
+            let num2 = Number(document.querySelector("#num2").value);
+            document.querySelector("#result").innerText = num1 - num2;
+        };
+
+        function multiply(){
+            let num1 = Number(document.querySelector("#num1").value);
+            let num2 = Number(document.querySelector("#num2").value);
+            document.querySelector("#result").innerText = num1 * num2;
+        };
+
+        function divide(){
+            let num1 = Number(document.querySelector("#num1").value);
+            let num2 = Number(document.querySelector("#num2").value);
+            document.querySelector("#result").innerText = num1 / num2;
         };
     </script>
 </body>
